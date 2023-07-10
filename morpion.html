@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="morpion.css">
+    <title> Jeu des Dev2 - Morpion</title>
+</head>
+
+
+<body>
+    <nav>
+        <div class="menu-hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="morpion.html">Morpion</a></li>
+            <li><a href="de.html">Dé</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="classement.html">Classement</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-img"> </div>
+
+    <div class="titre-jeu">
+        <h1>Jeu du Morpion</h1>
+    </div>
+
+    <div class="regles">
+        <h1> Comment jouer au morpion? </h1>
+        <p>
+        <ul>
+            <li>Le jeu comprend 2 joueurs sur un seul et même écran, représentés par les symboles "X" et "O".</li>
+            <li>Les joueurs alternent leur tour et placent leur symbole sur une case vide de la grille.</li>
+            <li> Le but du jeu est d'aligner trois de ses propres symboles de manière horizontale, verticale ou
+                diagonale.</li>
+            <li>Le jeu se termine dès qu'un joueur a réussi à aligner trois de ses symboles ou lorsque toutes les cases
+                de la
+                grille sont remplies sans qu'aucun joueur n'ait réalisé d'alignement.</li>
+            <li>Si un joueur parvient à aligner trois de ses symboles, il remporte la partie et le jeu s'arrête.</li>
+            <li> Si toutes les cases de la grille sont remplies sans qu'aucun joueur n'ait réalisé d'alignement, la
+                partie est
+                déclarée nulle.</li>
+            <li>Si la partie se termine par une victoire ou une égalité, les joueurs ont la possibilité de recommencer
+                une
+                nouvelle partie.</li>
+            </p>
+            <h2> Prêt? Que le meilleur gagne.</h2>
+    </div>
+    <div class="container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+    </div>
+    <div class="jeu">
+
+
+        <div class="player-names">
+            <input type="text" id="player1" placeholder="Nom du Joueur 1">
+            <input type="text" id="player2" placeholder="Nom du Joueur 2">
+            <button id="start-button">Commencer</button>
+        </div>
+
+        <div class="game-board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="menu-hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="morpion.html">Morpion</a></li>
+                <li><a href="de.html">Dé</a></li>
+                <li><a href="contact.html">Classement</a></li>
+                <li><a href="classement.html">Classement</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <audio src="son/Haut niveau.mp3" autoplay loop controls></audio>
+
+    <script src="morpion.js"></script>
+</body>
+
+</html>

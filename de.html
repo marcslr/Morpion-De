@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="de.css">
+    <title> Jeu des Dev2 - Dé</title>
+</head>
+
+<body>
+    <nav>
+        <div class="menu-hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="morpion.html">Morpion</a></li>
+            <li><a href="de.html">Dé</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="classement.html">Classement</a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
+
+    <div class="header-img"> </div>
+    <div class="titre-jeu">
+        <h1>Lancer de Dé</h1>
+    </div>
+
+    <div class="regles">
+        <h1> Comment jouer au dé? </h1>
+        <p>
+        <ul>
+            <li>Le jeu comprend 2 joueurs sur un seul et même écran.</li>
+            <li>Chaque joueur possède une partition temporaire appelée "ROUND" et une partition globale appelée
+                "GLOBAL".</li>
+            <li>Au début de chaque tour, le score ROUND du joueur est initialisé à 0.</li>
+            <li>Le joueur peut lancer un dé autant de fois qu'il le souhaite pendentif son tour en cliquant sur le
+                bouton "Lancer le dé".</li>
+            <li>Le résultat de chaque lancer de dé est ajouté au score ROUND du joueur.</li>
+            <li>Si le joueur affiche un 1 lors d'un lancer, son score ROUND est perdu et son tour se termine.</li>
+            <li>Le joueur peut décider à tout moment de cliquer sur le bouton "Hold" pour envoyer les points de son
+                score ROUND vers son score GLOBAL. Ce sera alors le tour de l'autre joueur.</li>
+            <li>Le premier joueur qui atteint ou dépasse 100 points sur son score GLOBAL remporte le jeu.</li>
+            <li>Une fois qu'un joueur remportera le jeu, son nom sera affiché avec la mention "(Gagnant)" à côté.</li>
+            <h2> Prêt? Que le meilleur gagne.</h2>
+    </div>
+    <div class="logo">
+        <img id="logo-shrink" src="images/de-image-animee-0047.gif" alt="Logo dé">
+    </div>
+    <div class="jeu">
+        <div id="player-names">
+            <label for="player1-name">Joueur 1 :</label>
+            <input type="text" id="player1-name" placeholder="Prénom joueur 1">
+            <br>
+            <label for="player2-name">Joueur 2 :</label>
+            <input type="text" id="player2-name" placeholder="Prénom joueur 2">
+        </div>
+
+        <div id="game-board">
+            <div id="player1">
+                <h2 id="player1-title">Joueur 1</h2>
+                <div id="player1-score">Score : 0</div>
+                <div>En cours : <span id="player1-current">0</span></div>
+                <div>
+                    <button class="dice" id="btn-roll">Lancer</button>
+                    <button class="dice" id="btn-hold">Hold</button>
+                </div>
+            </div>
+            <div id="player2">
+                <h2 id="player2-title">Joueur 2</h2>
+                <div id="player2-score">Score : 0</div>
+                <div>En cours : <span id="player2-current">0</span></div>
+            </div>
+        </div>
+        <div id="new-game">
+            <button id="btn-new-game">Nouvelle partie</button>
+        </div>
+    </div>
+    <nav>
+        <div class="menu-hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="morpion.html">Morpion</a></li>
+            <li><a href="de.html">Dé</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="classement.html">Classement</a></li>
+        </ul>
+    </nav>
+    <audio src="son/Musique libre de droits Fredji - Happy Life.mp3" autoplay loop controls>
+
+    </audio>
+    <script src="de.js"></script>
+</body>
+
+</html>
